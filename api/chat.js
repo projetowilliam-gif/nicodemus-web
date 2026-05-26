@@ -43,7 +43,7 @@ module.exports = async (req, res) => {
     }));
 
     const response = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
       {
         system_instruction: {
           parts: [{ text: SYSTEM_PROMPT }]
